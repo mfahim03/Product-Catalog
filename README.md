@@ -83,6 +83,7 @@ The UI does not call HTTP directly. Keeping network work in the service and repo
 
 This was deliberately scoped as a small assessment project. Given more time, I would add:
 
+- Product navigation by category so users can find items quickly
 - Dependency injection and feature-level state management as the app grows
 - Role-based access control for catalog managements
 - More API-service and controller tests, including pagination and error scenarios
