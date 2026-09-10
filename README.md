@@ -1,17 +1,25 @@
-# product_catalog
+# Product Catalogue
 
-A new Flutter project.
+A Flutter product catalogue built for the Neurogine Junior Mobile Developer technical assessment. It uses the free [DummyJSON Products API](https://dummyjson.com/docs/products)
 
-## Getting Started
+## Stack
 
-This project is a starting point for a Flutter application.
+- Flutter and Dart
+- `http` for network requests
+- Material 3 widgets
 
-A few resources to get you started if this is your first Flutter project:
+## Run locally
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+Pre-requisites: Flutter SDK 3.12 or newer, Android emulator/device, Windows desktop or Chrome.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter pub get
+flutter run
+```
+
+## Verify
+
+```bash
+flutter analyze
+flutter test
+```
