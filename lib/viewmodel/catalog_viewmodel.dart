@@ -5,7 +5,7 @@ import '../repository/product_repository.dart';
 
 enum CatalogStatus { loading, success, empty, error }
 
-/// Presentation logic and state for the catalogue view.
+/// Presentation logic and state for the catalog view.
 class CatalogViewModel {
   CatalogViewModel(this._repository);
 

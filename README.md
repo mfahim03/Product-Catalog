@@ -1,6 +1,6 @@
-# Product Catalogue
+# Product Catalog
 
-A Flutter product catalogue built for the Neurogine Junior Mobile Developer technical assessment. It uses the free [DummyJSON Products API](https://dummyjson.com/docs/products)
+A Flutter product catalog built for the Neurogine Junior Mobile Developer technical assessment. It uses the free [DummyJSON Products API](https://dummyjson.com/docs/products)
 
 ## Stack
 
@@ -40,7 +40,7 @@ flutter test
 - Pull-to-refresh
 - Image loading and error placeholders
 - A data-model parsing test
-- Tapping **THE CATALOGUE** scrolls the grid to the top and refreshes it
+- Tapping **THE CATALOG** scrolls the grid to the top and refreshes it
 
 ## API usage
 
@@ -50,7 +50,7 @@ The app uses these endpoints:
 - Detail: `GET /products/{id}`
 - Search: `GET /products/search?q={query}&limit=20&skip={skip}`
 
-Search is server-side instead of client-side because the app intentionally loads products in pages. Filtering only the products already held in memory would omit matches from later pages; the search endpoint searches the complete catalogue and still supports pagination.
+Search is server-side instead of client-side because the app intentionally loads products in pages. Filtering only the products already held in memory would omit matches from later pages; the search endpoint searches the complete catalog and still supports pagination.
 
 ## Architecture
 
@@ -70,7 +70,7 @@ CatalogPage / ProductDetailPage
 - `lib/service/dummyJson_api.dart` — HTTP requests, endpoint construction, timeout handling, JSON decoding, and readable API errors.
 - `lib/repository/product_repository.dart` — data-access boundary used by presentation code.
 - `lib/viewmodel/catalog_viewmodel.dart` — list state, pagination, search, refresh, retry, and stale-request protection.
-- `lib/view/catalog_page.dart` — responsive catalogue UI and user interactions.
+- `lib/view/catalog_page.dart` — responsive catalog UI and user interactions.
 - `lib/view/product_detail_page.dart` — detail loading, retry UI, and the image gallery.
 
 The UI does not call HTTP directly. Keeping network work in the service and repository means widgets only render state and handle interactions. The ViewModel tracks a request version so an older, slower search response cannot replace the results of a newer query.
