@@ -91,5 +91,6 @@ This was deliberately scoped as a small assessment project. Given more time, I w
 
 AI assistance was used for:
 - README documentations
+- Implementation guidance
 - UI iteration
 - Code review
